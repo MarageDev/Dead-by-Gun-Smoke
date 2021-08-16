@@ -28,46 +28,6 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-38564255-7');
-        
-              var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '360',
-          width: '640',
-          videoId: 'M7lc1UVf-VE',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
     </script>    
 </head>
 <body>
@@ -123,15 +83,7 @@
         <div class="wrapper">
             <div class="headerContainer"><h2 class="header">Discover <span class="colored">beautifull</span> places <span class="colored">Devasted</span> by the Extremists.</h2></div>
             <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <iframe width="560" height="315" src="https://youtu.be/embed/jzvXpyFCkj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-=======
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0QLFg1pd2dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
->>>>>>> parent of 35fc953 (Update index.html)
-=======
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0QLFg1pd2dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
->>>>>>> parent of 35fc953 (Update index.html)
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=0QLFg1pd2dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>
                     <span>
                         Fight for the Freedom in an unknown Archipelago, an open world first / third person shooter were 
